@@ -23,4 +23,4 @@ mv $rootfolder/foo/dummy/file2.txt $rootfolder/foo/empty/
 #4. Get content from a website (ie:lemoncode.net)
 echo "Add text to search into website: www.lemoncode.net"
 read word
-curl -o lemoncode.txt https://lemoncode.net | cat lemoncode.txt | grep -io -n $word
+curl -o $rootfolder/foo/lemoncode.txt https://lemoncode.net && cat $rootfolder/foo/lemoncode.txt | grep -io -n $word
